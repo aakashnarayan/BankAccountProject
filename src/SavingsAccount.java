@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Aakash Narayan
+ * AP Computer Science Period 7
+ * class SavingsAccount
+ * 
+ */
 
 public class SavingsAccount extends BankAccount 
 {
@@ -8,6 +15,14 @@ public class SavingsAccount extends BankAccount
 	private double intRate;
 	
 	//constructors
+	/**
+	 * Constructs savings account
+	 * @param n This is the name of the bank account holder. 
+	 * @param b	This is the balance of the bank account.
+	 * @param r This is the interest rate of the bank account.
+	 * @param mb This is the minimum balance of the bank account.
+	 * @param mbf This is the minimum balance fee of the bank account.
+	 */
 	SavingsAccount(String n, double b, double r, double mb, double mbf)
 	{
 		super(n, b);
@@ -16,6 +31,13 @@ public class SavingsAccount extends BankAccount
 		MIN_BAL_FEE = mbf;
 	}
 	
+	/**
+	 * Constructs savings account with balance set to 0.
+	 * @param n This is the name of the bank account holder. 
+	 * @param r This is the interest rate of the bank account.
+	 * @param mb This is the minimum balance of the bank account.
+	 * @param mbf This is the minimum balance fee of the bank account.
+	 */
 	SavingsAccount(String n, double r, double mb, double mbf)
 	{
 		super(n, 0);

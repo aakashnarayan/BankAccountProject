@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Aakash Narayan
+ * AP Computer Science Period 7
+ * class CheckingAccount
+ * 
+ */
 
 public class CheckingAccount extends BankAccount 
 {
@@ -9,6 +16,15 @@ public class CheckingAccount extends BankAccount
 	private int numTransactions;
 
 	//constructors
+	
+	/**
+	 * Constructs checking account
+	 * @param n This is the name of the bank account holder.
+	 * @param b This is the balance of the bank account.
+	 * @param odf This is the overdraft fee of the bank account.
+	 * @param tf This is the transaction fee of the bank account.
+	 * @param freeTrans This is the free transaction limit of the bank account.
+	 */
 	public CheckingAccount(String n, double b, double odf, double tf, int freeTrans)
 	{
 		super(n, b);
@@ -16,6 +32,14 @@ public class CheckingAccount extends BankAccount
 		TRANSACTION_FEE = tf;
 		FREE_TRANS = freeTrans;
 	}
+	
+	/**
+	 * Constructs checking account with balance set to 0.
+	 * @param n This is the name of the bank account holder.
+	 * @param odf This is the overdraft fee of the bank account.
+	 * @param tf This is the transaction fee of the bank account.
+	 * @param freeTrans This is the free transaction limit of the bank account.
+	 */
 	public CheckingAccount(String n, double odf, double tf, int freeTrans)
 	{
 		super(n, 0);
